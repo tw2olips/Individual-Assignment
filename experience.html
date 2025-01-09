@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Career Highlights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5f8;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffd6e8;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 95%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            flex: 1;
+            padding: 20px;
+            background: url('images/pink.jpg') center/cover no-repeat;
+            border-right: 2px solid #ddd;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            display: block;
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: 0.3s ease;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #ffd6e8;
+            font-weight: bold;
+        }
+        article {
+            flex: 2;
+            padding: 20px;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+        .experience-item ol {
+            padding-left: 20px;
+        }
+        .experience-item ol li {
+            margin-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #ffd6e8;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ffe5f0;
+        }
+        table img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+        }
+        footer
+        {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #ffccdd;
+            color: #4a4a4a;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Experience</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="#" class="active">Experience</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <article>
+            <section id="experience">
+                <div class="experience-item">
+                    <h3>TF Value Mart</h3>
+                    <p><strong>Duration:</strong> 2022</p>
+                    <p><strong>Role:</strong> Cashier</p>
+                    <ol>
+                        <li>Operated cash register and ensured accurate money handling.</li>
+                        <li>Followed store procedures regarding coupons and gift cards.</li>
+                    </ol>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/tf.jpg" alt="TF Value Mart logo"></td>
+                                <td>The workplace as a cashier.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Pasta Club</h3>
+                    <p><strong>Duration:</strong> 2023 - 2024</p>
+                    <p><strong>Role:</strong> Kitchen Staff</p>
+                    <ol>
+                        <li>Collaborated with team members to ensure efficient kitchen operations.</li>
+                        <li>Maintained strict food safety and sanitation standards.</li>
+                    </ol>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="https://www.instagram.com/pastaclub.co" target="_blank">
+                                    <img src="images/pasta.jpg" alt="Pasta Club kitchen"></a></td>
+                                <td>A glimpse of the kitchen <br>workspace and teamwork.<br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Ayam Gepuk FrutiGO</h3>
+                    <p><strong>Duration:</strong> 2024 - 2025</p>
+                    <p><strong>Role:</strong> Kitchen Staff</p>
+                    <ol>
+                        <li>Managed ingredient preparation, including cleaning and chopping vegetables, and preparing sambal using traditional techniques.</li>
+                        <li>Maintained a clean and organized kitchen environment by sanitizing workstations, cleaning utensils, and adhering to food safety standards.</li>
+                        <li>Collaborated with team members to ensure timely order preparation during peak hours.</li>
+                    </ol>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="https://www.tiktok.com/@ayamgepukfrutigo" target="_blank">
+                                    <img src="images/ayam.jpeg" alt="Ayam Gepuk FrutiGO Kiosk"></a></td>
+                                <td>A visual of the <br>kiosk setup and ambiance.<br></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.tiktok.com/@ayamgepukfrutigo" target="_blank">
+                                    <img src="images/gepuk.jpeg" alt="Ayam Gepuk Dish"></a></td>
+                                <td>The signature dish<br>served with sambal.<br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Internship at <i>Majlis Perbandaran Temerloh</i><sup>MPT</sup></h3>
+                    <p><strong>Duration:</strong> 2024</p>
+                    <p><strong>Department:</strong> <i>Jabatan Pengurusan dan Penilaian Harta</i></p>
+                    <ol>
+                        <li>Conducted house inspections and managed data entry tasks.</li>
+                        <li>Distributed notices for fire extinguisher installation, rental agreements, and rent claims.</li>
+                        <li>Assisted in managing tax systems for municipal services.</li>
+                    </ol>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="https://www.mpt.gov.my/en" target="_blank">
+                                    <img src="images/mpt.jpg" alt="Majlis Perbandaran Temerloh building"></a></td>
+                                <td><abbr title="Majlis Perbandaran Temerloh">MPT</abbr> building where<br>the internship was conducted.<br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </article>
+    </div>
+    <footer>
+        <p>&copy; 2024 Husna Alya. All rights reserved.</p>
+    </footer>
+</body>
+</html>

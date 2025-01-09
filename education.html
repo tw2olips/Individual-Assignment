@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academic Background</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5f8;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffd6e8;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 95%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            flex: 1;
+            padding: 20px;
+            background: url('images/pink.jpg') center/cover no-repeat;
+            border-right: 2px solid #ddd;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            display: block;
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: 0.3s ease;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #ffd6e8;
+            font-weight: bold;
+        }
+        article {
+            flex: 2;
+            padding: 20px;
+        }
+        .education-item {
+            margin-bottom: 20px;
+        }
+        .education-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+        .education-item ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        .education-item ul li {
+            margin-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #ffd6e8;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ffe5f0;
+        }
+        table img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+        }
+        footer
+        {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #ffccdd;
+            color: #4a4a4a;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Education</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="#" class="active">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <article>
+            <section id="education">
+                <div class="education-item">
+                    <h3><u>Elementary School</u></h3>
+                    <p><strong>Duration:</strong> 2011 - 2016 </p>
+                    <p><strong>School:</strong> Sekolah Kebangsaan Temerloh Jaya <sup>SKTJ</sup></p>
+                <p id="content">UPSR Result</p>
+                <button type="button" onclick='document.getElementById("content").innerHTML = "3A 3C"'>Click to reveal</button>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/sktj.jpeg" alt="Sekolah Kebangsaan Temerloh Jaya (SKTJ)"></td>
+                                <td>My elementary school<br>from year 7 until year 12.<br></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="education-item">
+                    <h2><u>Secondary School</u></h2>
+                    <p><strong>Duration:</strong> 2017 - 2022</p>
+                    <p><strong>School:</strong> SMA Al-Khairiah</p>
+                    <p id="item">SPM Result</p>
+                    <button type="button" onclick='document.getElementById("item").innerHTML = "5A 1B 2C 1D"'>Click to reveal</button>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/5A.jpeg" alt="Graduation from Secondary School"></td>
+                                <td>Graduation with friends.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/SPM.jpeg" alt="SPM 5As"></td>
+                                <td>Getting 5As for SPM.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="education-item">
+                    <h2><u>University</u></h2>
+                    <p><strong>Duration:</strong> 2022 - 2025</p>
+                    <p><strong>University:</strong> UiTM Cawangan Kelantan</p>
+                    <ul style="list-style-image: url(images/butterfly.png);">
+                        <li>Semester 1: 3.8</li>
+                        <li>Semester 2: 3.9</li>
+                        <li>Semester 3: 3.68</li>
+                        <li>Semester 4: 3.5</li>
+                    <p id="cgpa">CGPA</p>
+                    <button type="button" onclick='document.getElementById("cgpa").innerHTML = "3.73"'>Click to reveal</button>
+                    </ul>
+                        <table>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/uitm.jpeg" alt="UiTM Cawangan Kelantan" usemap="#universitymap">
+                                        <map name="universitymap">
+                                        <area shape="rect" coords="34,44,270,350" alt="UiTM Website" href="https://kelantan.uitm.edu.my/index.php/en/" target="_blank" onclick="alert('You clicked UiTM!');">
+                                        </map></td>
+                                <td>My university <br>from 2022 until 2025.<br></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/5C.jpeg" alt="Class of 5C"></td>
+                                <td>Class of 5C.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </article>
+    </div>
+    <footer>
+        <p>&copy; 2024 Husna Alya. All rights reserved.</p>
+    </footer>
+</body>
+</html>

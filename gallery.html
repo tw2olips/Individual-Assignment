@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5f8;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url(images/scribble.jpg);
+            text-align: center;
+            padding: 20px 0;
+            background-attachment: fixed;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            text-align: center;
+            background-color: #fcd2e0;
+        }
+        header button {
+            align-items: left;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 95%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            flex: 1;
+            padding: 20px;
+            background: url('images/ribbon.png') center/cover no-repeat;
+            border-right: 2px solid #ddd;
+            background-attachment: fixed;
+        }
+        .friends-item, .participation-item, .experience-item, .intern-item {
+            text-align: center;
+        }
+        .friends-item img, .participation-item img, .experience-item img,.intern-item img {
+            width: 350px;
+            height: 250px;
+            border-radius: 25px;
+            padding: 8px;
+        }
+        .experience-item video {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        footer
+        {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #ffccdd;
+            color: #4a4a4a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <iframe src="https://free.timeanddate.com/clock/i9pooxd3/n5090/fn12/fs18/fcfff/tc666/pct/ftb/bls0/brs0/bts4/btc666" frameborder="0" width="125" height="25" allowtransparency="true"></iframe>
+        <br></br>
+        <h1>Gallery</h1>
+        <h3>Welcome to my gallery!</h3>
+        <p> This is where I keep my treasured memories.</p>
+        <img src="animations/gary.gif" width="100px" height="100px"> 
+    </header>
+
+    <div class="container">
+        <nav>
+            <section id="friends">
+                <div class="friends-item">
+                    <h3>My beloved friends.</h3>
+                    <img src="images/friends.jpg" alt="They are my friends back home.">
+                    <img src="images/catcafe.jpg" alt="This is my friends from Ayam Gepuk FrutiGO">
+                    <img src="images/diploma.jpg" alt="This is my comfort friends">
+                </div>
+            </section>
+        </nav>
+    </div>
+
+    <div class="container">
+        <nav>
+            <section id="participation">
+                <div class="participation-item">
+                    <h3>My participation in university.</h3>
+                    <img src="images/dean.jpg" alt="Dean list award">
+                    <img src="images/crewbunkface.jpg" alt="My experience as an event manager for Bunkface">
+                    <img src="images/eskep.jpg" alt="Last ESKEP with PROSIS">
+                </div>
+            </section>
+        </nav>
+    </div>
+
+    <div class="container">
+        <nav>
+            <section id="intern">
+                <div class="intern-item">
+                    <h3>My internship journey.</h3>
+                    <img src="images/intern.jpg" alt="Farewell party">
+                    <img src="images/tirah.jpeg" alt="My friends during internship">
+                    <img src="images/punchcard.jpeg" alt="Punch card">
+                </div>
+            </section>
+        </nav>
+    </div>
+
+    <div class="container">
+        <nav>
+            <section id="experience">
+                <div class="experience-item">
+                    <h3>My short trip with friends.</h3>
+                    <img src="images/sungai.jpeg" alt="Short trip with Thirah">
+                    <img src="images/view2.jpg" alt="Hiking">
+                    <img src="images/kafekucen.jpeg" alt="First time went to a cat cafe">
+                </div>
+            </section>
+        </nav>
+    </div>
+
+    <div class="container">
+        <nav>
+            <section id="experience">
+                <div class="experience-item">
+                    <h3>These are short clips from my life.</h3>
+                    <video controls>
+                        <source src="video/dekan.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="video/bunkface.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="video/forrevenge.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+        </nav>
+    </div>
+        <div class="container">
+            <nav>
+                <section id="experience">
+                    <div class="experience-item">
+                    <video controls>
+                        <source src="video/promote.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="video/melaka.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="video/friends.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+        </nav>
+    </div>
+    <footer>
+        <p>&copy; 2024 Husna Alya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
